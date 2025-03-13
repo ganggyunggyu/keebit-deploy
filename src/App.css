@@ -1,0 +1,63 @@
+/* 웹킷(Chrome, Edge, Safari)에서 스크롤바 숨기기 */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox에서 스크롤바 숨기기 */
+html {
+  scrollbar-width: none;
+
+}
+
+html,body{
+ width: 100vw; 
+ height: 100vh;
+}
+
+.top {
+  transform: translateY(7px);
+  transition: 0.3s;
+}
+.top-rotate {
+  transform: translateY(9px) rotate(45deg);
+}
+.bottom {
+  transform: translateY(-7px);
+  transition: 0.3s;
+}
+.bottom-rotate {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.top-rotate-reverse {
+  transform: translateY(7px) rotate(0deg);
+  transition: 0.3s;
+}
+.bottom-rotate-reverse {
+  transform: translateY(-7px) rotate(0deg);
+  transition: 0.3s;
+}
+.bottom-origin {
+  transform: translateY(0) rotate(0);
+  transition: 0.3s;
+}
+.top-origin {
+  transform: translateY(0) rotate(0);
+  transition: 0.3s;
+}
+@font-face {
+  font-family: 'Congrates';
+  src: url('../../../keebit/keebit-typescript/src/assets/fonts/Congrates.ttf');
+}
+/*@font-face {*/
+/*  font-family: 'Crog';*/
+/*  src: url('../../../keebit/keebit-typescript/src/assets/fonts/Crog.otf');*/
+/*}*/
+
+.logo-font {
+  font-family: 'Congrates';
+  letter-spacing: 2.5px;
+}
+
+.logo-font-2 {
+  font-family: 'Crog';
+}
